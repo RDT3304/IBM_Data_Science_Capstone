@@ -31,7 +31,7 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                 html.Br(),
                                 html.P("Payload range (Kg):"),
                                 dcc.RangeSlider(id='payload-slider', min = 0, max = 10000, step = 1000, value = [min_payload, max_payload], 
-                                                marks={ 2500: {'label': '2500 (Kg)'}, 5000: {'label': '5000 (Kg)'}, 7500: {'label': '7500 (Kg)'}}),
+                                                marks={ 2000: {'label': '2000 (Kg)'}, 5000: {'label': '5000 (Kg)'}, 8000: {'label': '8000 (Kg)'}}),
                                 html.Div(dcc.Graph(id='success-payload-scatter-chart')),
                                 ])
 
